@@ -13,11 +13,26 @@ retangular, calculando e mostrando a sua área em m². O programa também
 devemostrar a classificação desse terreno, de acordo com a lista abaixo:
 - Abaixo de 100m² = TERRENO POPULAR
 - Entre 100m² e 500m² = TERRENO MASTER
-- Acima de 500m² = TERRENO VIP
-<div>
-
-
-
+- Acima de 500m² = TERRENO VIP -->
+<div> 
+    <?php 
+    $largura = $_GET ["largura"];
+    $comprimento = $_GET ["comprimento"];
+    $area = $largura * $comprimento;
+    if ($area < 100) {
+        echo "TERRENO POPULAR";
+    }
+    elseif ($area > 100) {
+        echo "TERRENO MASTER";
+    }
+    else {
+        echo "TERRENO VIP";
+    }
+    
+    
+    
+    
+    ?>
 
 </div>
 </body>
