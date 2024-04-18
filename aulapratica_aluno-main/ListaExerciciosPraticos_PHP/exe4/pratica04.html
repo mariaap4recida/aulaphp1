@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex 04</title>
+    <style>
+        h2 {
+            color: red;
+            font: 20px arial black;
+        }
+    </style>
 </head>
 <body>
 <!--
@@ -12,7 +18,17 @@ Faça um algoritmo que leia o salário de um funcionário,
 calcule e mostre o seu novo salário, com 15% de aumento.
 -->
 <div>
-
+    <form action="pratica04.php" method="get">
+        <h2> Lendo o salario</h2>
+        <label for="func">Nome do funcionario:</label>
+        <input type="text" name="func" placeholder="Digite:" id="func">
+        <br>
+        <br>
+        <label for="num">salário:</label>
+        <input type="number" name="sal" placeholder="Digite:" id="func">
+        <br>
+        <br>
+        <input type="submit" value="Calcular"/>
 
 
 

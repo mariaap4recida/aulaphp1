@@ -19,9 +19,28 @@ que:
 - Mulheres ganham 13% de desconto
 -->
 <div>
-
-
-
+    <?php 
+    $nome = $_GET["nome"];  
+    $vp = $_GET["vp"];
+    $o = $_GET ["oper"];
+    switch ($o) {
+        case 1:
+            $des = ($vp*5)/100;
+            $vpd = $vp - $des;
+            echo "O valor total: R$" . number_format($vpd,2,",",".");
+            break;
+        case 2:
+            $des = ($vp*13)/100;
+            $vpd = $vp - $des;
+            echo "O valor total: R$" . number_format($vpd,2,",",".");
+            break;
+        
+        default:
+            
+            break;
+    }
+    
+    ?>
 
 </div>
 </body>

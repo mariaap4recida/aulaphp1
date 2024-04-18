@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex 03</title>
+    <style>
+        h2 {
+            color: red;
+            font: 20px arial black;
+        }
+    </style>
 </head>
 <body>
 <!--
@@ -13,9 +19,13 @@ calcule e mostre o seu PREÇO PROMOCIONAL,
 com 5% de desconto.
 -->
 <div>
-
-
-
+    <form action="pratica03.php" method="get">
+        <h2> Preco promocional</h2>
+        <label for="vp">Digite o  valor para os %5:</label>
+        <input type="number" name="vp" placeholder="Digite:" id="vp">
+        <br>
+        <br>
+        <input type="submit" value="Calcular"/>
 
 </div>
 </body>

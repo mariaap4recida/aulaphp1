@@ -5,6 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex 08</title>
+    <style>
+        h2 { 
+            color: rgb(197, 5, 5);
+            font: 18pt arial black; }
+            fieldset {
+                color: black;
+                width: 200px;
+                height: 20px;
+                padding: 5px;
+                margin: 5px; 
+            }
+            </style>
 </head>
 <body>
 <!--
@@ -19,7 +31,25 @@ que:
 - Mulheres ganham 13% de desconto
 -->
 <div>
-
+    <form action="pratica08.php" method="get">
+        <h2> Dias das mulheres</h2>
+        <label for="nome">Nome do cliente</label>
+        <input type="text" name="nome" placeholder="Digite:" id="nome">
+        <br>
+        <br>
+        <label for="viewport">Preco do produto:</label>
+        <input type="number" name="vp" placeholder="Digite:" id="vp">
+        <fieldset>
+            <input type="radio" name="oper" id="feminino"
+            value = "1"/>
+            <label for="masculuno" >Feminino </label> 
+            <input type="radio" name="oper" id="masculuno"
+            value = "2"/>
+            <label for="masculuno" >Masculino  </label> 
+        </fieldset>
+        <br>
+        <br>
+        <input type="submit" value="Calcular"/>
 
 
 

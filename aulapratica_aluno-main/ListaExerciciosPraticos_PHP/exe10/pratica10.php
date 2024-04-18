@@ -15,8 +15,33 @@ mostrando uma mensagem no final, de acordo com a média atingida:
 - Média 7.0 ou superior: APROVADO
 -->
 <div>
+<?php 
+    $n1 = $_GET ["n1"];
+    $n2 = $_GET ["n2"];
+    $media = ($n1 + $n2 )/2;
+    if ($media >= 7) {
+        echo "Aprovado!";
+        echo "<br/>Nota do aluno: $media.";
+    }
+    elseif ($media >= 5 && $media <= 6.99) {
+        echo "Recuperação!";
+        echo "<br/Nota do aluno: $media.";
+    }
+    elseif ($media <= 4.99) {
+        echo "Reprovado!";
+        echo "<br/>Nota do aluno: $media.";
+    }
 
-
+    else {
+        echo "Reprovado!";
+        echo "<br/>Nota do aluno: $media.";
+    }
+    
+    
+    ?>
+    <br>
+    <br>
+    <a href="pratica10.html"><button>Voltar</button></a>
 
 
 </div>

@@ -15,9 +15,20 @@ na tela uma das mensagens abaixo:
 - Não existe valor maior, os dois são iguais
 -->
 <div>
-
-
-
+    <?php 
+    $n1 = $_GET ["n1"];
+    $n2 = $_GET ["n2"];
+    if ($n1 > $n2) {
+    echo "O múmero $n1 é maior que $n2.";
+    }
+    elseif ($n1 < $n2) {
+        echo "O múmero $n1 é menor que $n2.";
+    }
+    else
+    echo "O múmero $n1 é igual a $n2.";
+    
+    
+    ?>
 
 </div>
 </body>

@@ -14,9 +14,19 @@ O antecessor de 9 é 8
 O sucessor de 9 é 10
 -->
 <div>
-
-
-
+    <?php 
+    $n1 = $_GET ["n1"];
+    $suc = $n1+1;
+    $ant = $n1-1;
+    if ($n1 == true) {
+        echo "O sucessor de $n1 é $suc e o antecessor de $n1 é $ant.";
+    }
+    else
+    echo "Voce não digitou corretamente...";
+    
+    
+    
+    ?>
 
 </div>
 </body>

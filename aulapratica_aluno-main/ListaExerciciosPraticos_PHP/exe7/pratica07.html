@@ -14,7 +14,16 @@ usuário foi multado. Nesse caso, exiba o valor da multa,
 cobrando R$5 por cada Km acima da velocidade permitida.
 -->
 <div>
-
+    <form action="pratica07.php" method="get">
+        <h2> Calcular multa</h2>
+        <label
+        for="km"> Informe a velocidade do veículo:</label>
+        <br>
+        <input type="number" name="km" placeholder="Digite o km:" id= "km" step="0.01"
+        min="0" max="300" required/>
+        <br>
+        <br>
+       <button type="submit"><span>Verificar</span></button>
 
 
 

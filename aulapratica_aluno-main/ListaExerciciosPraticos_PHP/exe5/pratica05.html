@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex 05</title>
+    <style>
+        h2 {
+            color: rgb(14, 109, 172);
+            font: 20px arial black;
+        }
+    </style>
 </head>
 <body>
 <!--
@@ -12,9 +18,21 @@ A locadora de carros precisa da sua ajuda para cobrar seus serviços. Escreva um
 sabendo que o carro custa R$90 por dia e R$0,20 por Km rodado.
 -->
 <div>
-
-
-
+    <form action="pratica05.php" method="get">
+        <h2> Locadora de carros.com</h2>
+        <label for="nome">Nome do cliente:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome completo" id="nome">
+        <br>
+        <br>
+        <label for="dia">Quantos dias alugado?</label>
+        <input type="number" name="dia" placeholder="Digite:" id="dia">
+        <br>
+        <br>
+        <label for="num">Quantos Km?</label>
+        <input type="number" name="km" placeholder="Digite:" id="km">
+        <br>
+        <br>
+        <input type="submit" value="Verificar"/>
 
 </div>
 </body>
